@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillipop - All Courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">SKILLIPOP</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html" class="btn btn-primary">Register</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Course Filters -->
+    <section class="course-filters">
+        <div class="container">
+            <div class="filter-container">
+                <input type="text" id="search-input" placeholder="Search courses...">
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="Communication">Communication</button>
+                    <button class="filter-btn" data-category="Productivity">Productivity</button>
+                    <button class="filter-btn" data-category="Management">Management</button>
+                    <button class="filter-btn" data-category="Self-Awareness">Self-Awareness</button>
+                    <button class="filter-btn" data-category="Career Development">Career</button>
+                    <button class="filter-btn" data-category="Wellness">Wellness</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Details Section -->
+    <section class="course-listing">
+        <div class="container">
+            <div class="course-list" id="course-list">
+                <!-- Public Speaking -->
+                <div class="course-detail-card" data-category="Communication" 
+                     data-keywords="public speaking presentation communication">
+                    <div class="course-header">
+                        <h2>Public Speaking Mastery</h2>
+                        <span class="course-category">Communication</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 6 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> Sarah Johnson</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="course-description">
+                            Master the art of public speaking with proven techniques from TEDx speakers. 
+                            Learn to overcome stage fright, structure compelling speeches, and engage 
+                            audiences effectively. Includes practical exercises and video feedback.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Overcome stage fear and anxiety</li>
+                                <li>Structure persuasive presentations</li>
+                                <li>Use body language effectively</li>
+                                <li>Handle Q&A sessions confidently</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Time Management -->
+                <div class="course-detail-card" data-category="Productivity" 
+                     data-keywords="time management productivity efficiency">
+                    <div class="course-header">
+                        <h2>Effective Time Management</h2>
+                        <span class="course-category">Productivity</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> Michael Chen</span>
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="course-description">
+                            Transform your productivity with scientifically-backed time management strategies. 
+                            Learn prioritization techniques, task batching, and tools to minimize distractions. 
+                            Includes personalized productivity audits.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Eisenhower Matrix prioritization</li>
+                                <li>Deep work strategies</li>
+                                <li>Digital tool optimization</li>
+                                <li>Overcoming procrastination</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leadership Development -->
+                <div class="course-detail-card" data-category="Management" 
+                     data-keywords="leadership management team-building">
+                    <div class="course-header">
+                        <h2>Leadership Development</h2>
+                        <span class="course-category">Management</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 8 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> David Wilson</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="course-description">
+                            This course provides a foundation for leadership practice and aims to take you on a journey 
+                            of self-discovery. Gain insight into building inner stability and developing your leadership 
+                            skills to inspire teams effectively.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Project Management fundamentals</li>
+                                <li>Human Resource Management</li>
+                                <li>Adding value as a leader</li>
+                                <li>Building confidence in leadership</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Emotional Intelligence -->
+                <div class="course-detail-card" data-category="Self-Awareness" 
+                     data-keywords="emotions relationships self-awareness">
+                    <div class="course-header">
+                        <h2>Emotional Intelligence</h2>
+                        <span class="course-category">Self-Awareness</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 5 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> Lisa Wong</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="course-description">
+                            Develop the ability to understand, use, and manage your own emotions in positive ways to 
+                            relieve stress, communicate effectively, empathize with others, overcome challenges and 
+                            defuse conflict.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Self-awareness and self-regulation</li>
+                                <li>Social awareness and relationship management</li>
+                                <li>Empathy development</li>
+                                <li>Conflict resolution techniques</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Team Collaboration -->
+                <div class="course-detail-card" data-category="Management" 
+                     data-keywords="teamwork collaboration workplace">
+                    <div class="course-header">
+                        <h2>Team Collaboration</h2>
+                        <span class="course-category">Management</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> Robert Garcia</span>
+                            <span><i class="fas fa-star"></i> 4.5</span>
+                        </div>
+                        <p class="course-description">
+                            Learn the secrets of high-performing teams and how to foster collaboration in any work 
+                            environment. This course covers communication strategies, conflict resolution, and tools 
+                            for effective teamwork.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Building trust within teams</li>
+                                <li>Effective team communication</li>
+                                <li>Collaborative problem-solving</li>
+                                <li>Virtual team management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Conflict Resolution -->
+                <div class="course-detail-card" data-category="Communication" 
+                     data-keywords="conflict resolution workplace communication">
+                    <div class="course-header">
+                        <h2>Conflict Resolution</h2>
+                        <span class="course-category">Communication</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 3 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> Priya Patel</span>
+                            <span><i class="fas fa-star"></i> 4.4</span>
+                        </div>
+                        <p class="course-description">
+                            Acquire practical skills to resolve conflicts in professional and personal settings. 
+                            Learn mediation techniques, communication strategies, and how to turn conflicts into 
+                            opportunities for growth.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Identifying conflict sources</li>
+                                <li>Active listening techniques</li>
+                                <li>Mediation and negotiation</li>
+                                <li>Creating win-win solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Art of Negotiation -->
+                <div class="course-detail-card" data-category="Communication" 
+                     data-keywords="negotiation business deals communication">
+                    <div class="course-header">
+                        <h2>Art of Negotiation</h2>
+                        <span class="course-category">Communication</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 5 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> Emma Rodriguez</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="course-description">
+                            Master win-win negotiation strategies for business and personal success. This course 
+                            teaches you how to prepare for negotiations, understand the other party's needs, and 
+                            create agreements that benefit all parties involved.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Negotiation preparation techniques</li>
+                                <li>Identifying bargaining zones</li>
+                                <li>Handling difficult negotiators</li>
+                                <li>Closing deals effectively</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Critical Thinking Masterclass -->
+                <div class="course-detail-card" data-category="Productivity" 
+                     data-keywords="critical thinking analysis problem-solving">
+                    <div class="course-header">
+                        <h2>Critical Thinking Masterclass</h2>
+                        <span class="course-category">Productivity</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> David Kim</span>
+                            <span><i class="fas fa-star"></i> 4.9</span>
+                        </div>
+                        <p class="course-description">
+                            Develop analytical skills to make better decisions and solve complex problems. This 
+                            course teaches you how to evaluate information objectively, identify biases, and 
+                            approach problems systematically.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Logical reasoning techniques</li>
+                                <li>Identifying cognitive biases</li>
+                                <li>Structured problem-solving</li>
+                                <li>Decision-making frameworks</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Networking -->
+                <div class="course-detail-card" data-category="Career Development" 
+                     data-keywords="networking career professional relationships">
+                    <div class="course-header">
+                        <h2>Strategic Networking</h2>
+                        <span class="course-category">Career Development</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 3 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> Olivia Chen</span>
+                            <span><i class="fas fa-star"></i> 4.5</span>
+                        </div>
+                        <p class="course-description">
+                            Build meaningful professional relationships that advance your career. Learn how to 
+                            network authentically, maintain connections, and leverage your network for career 
+                            opportunities and professional growth.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Networking strategies for introverts</li>
+                                <li>Elevator pitch development</li>
+                                <li>Digital networking techniques</li>
+                                <li>Relationship maintenance</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Creativity & Innovation -->
+                <div class="course-detail-card" data-category="Self-Awareness" 
+                     data-keywords="creativity innovation problem-solving">
+                    <div class="course-header">
+                        <h2>Creativity & Innovation</h2>
+                        <span class="course-category">Self-Awareness</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 6 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> Marcus Wright</span>
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="course-description">
+                            Unlock your creative potential and develop breakthrough ideas. This course teaches 
+                            proven techniques to enhance creativity, foster innovation, and implement creative 
+                            solutions in professional settings.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Creative thinking techniques</li>
+                                <li>Overcoming creative blocks</li>
+                                <li>Design thinking principles</li>
+                                <li>Implementing innovative ideas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Stress Management -->
+                <div class="course-detail-card" data-category="Wellness" 
+                     data-keywords="stress management wellness work-life balance">
+                    <div class="course-header">
+                        <h2>Stress Management</h2>
+                        <span class="course-category">Wellness</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> Sophia Patel</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="course-description">
+                            Learn techniques to manage stress and maintain work-life balance. This course provides 
+                            practical tools to identify stress triggers, develop coping mechanisms, and create 
+                            sustainable self-care routines.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Identifying stress triggers</li>
+                                <li>Mindfulness techniques</li>
+                                <li>Time management for stress reduction</li>
+                                <li>Building resilience</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Effective Business Writing -->
+                <div class="course-detail-card" data-category="Communication" 
+                     data-keywords="business writing professional communication">
+                    <div class="course-header">
+                        <h2>Effective Business Writing</h2>
+                        <span class="course-category">Communication</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 5 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> Thomas Reynolds</span>
+                            <span><i class="fas fa-star"></i> 4.7</span>
+                        </div>
+                        <p class="course-description">
+                            Master professional writing for emails, reports, and proposals. Learn to communicate 
+                            clearly, concisely, and persuasively in business contexts, adapting your style for 
+                            different audiences and purposes.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Professional email etiquette</li>
+                                <li>Report and proposal writing</li>
+                                <li>Editing and proofreading techniques</li>
+                                <li>Tone and style adaptation</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2025 Skillipop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Course Filter Functionality
+        const searchInput = document.getElementById('search-input');
+        const filterButtons = document.querySelectorAll('.filter-btn');
+        const courseCards = document.querySelectorAll('.course-detail-card');
+
+        function filterCourses() {
+            const searchTerm = searchInput.value.toLowerCase();
+            const activeCategory = document.querySelector('.filter-btn.active').dataset.category;
+
+            courseCards.forEach(card => {
+                const category = card.dataset.category;
+                const keywords = card.dataset.keywords.toLowerCase();
+                const title = card.querySelector('h2').textContent.toLowerCase();
+                const matchesSearch = keywords.includes(searchTerm) || title.includes(searchTerm);
+                const matchesCategory = activeCategory === 'all' || category === activeCategory;
+
+                card.style.display = (matchesSearch && matchesCategory) ? 'block' : 'none';
+            });
+        }
+
+        // Event Listeners
+        searchInput.addEventListener('input', filterCourses);
+        
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                filterButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                filterCourses();
+            });
+        });
+    </script>
+</body>
+</html>
